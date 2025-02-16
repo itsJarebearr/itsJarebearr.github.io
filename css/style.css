@@ -34,9 +34,25 @@ body {
 
 ul {
   list-style: none;
-  padding-left: 0px;
+  padding-left: 10px;
+}
+
+a {
+  color: rgb(255, 164, 74);
+}
+
+a:hover {
+  color: rgb(33, 118, 255);
+}
+
+figure {
+  margin: auto;
 }
 
 figure img {
   width: 80%;
+}
+
+figcaption, footer {
+  font-size: 0.75em;
 }
