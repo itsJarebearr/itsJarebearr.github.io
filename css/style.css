@@ -16,7 +16,7 @@ html {
 
 body {
 	
-	  font-family: Avant Garde, sans-serif;
+font-family: Avant Garde, sans-serif;
   background: rgb(255, 250, 237);
   color: rgb(0, 0, 0);
   margin: 8px;
@@ -28,7 +28,7 @@ body {
 	border: 1px solid rgb(77, 86, 102);
   	background: rgb(193, 208, 227);
   	width: 90%;      
-  	max-width: 800px; 
+  	max-width: 1743px; 
   	margin: auto;
 }
 
@@ -50,7 +50,7 @@ figure {
 }
 
 figure img {
-  width: 80%;
+  width: 100%;
 }
 
 figcaption, footer {
