@@ -16,14 +16,23 @@ html {
 
 body {
 	
+	  font-family: Avant Garde, sans-serif;
+  background: rgb(255, 250, 237);
+  color: rgb(0, 0, 0);
+  margin: 8px;
 	
 }
 
 
 #container {
-	
+	border: 1px solid rgb(77, 86, 102);
+  	background: rgb(121, 133, 153);
+  	width: 90%;      
+  	max-width: 800px; 
+  	margin: auto;
 }
 
-
-
-
+ul {
+  list-style: none;
+  padding-left: 0px;
+}
