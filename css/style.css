@@ -1,7 +1,7 @@
 /* Basic CSS resets -- leveling slight inconsistencies in browsers */
 html, body {
-	margin:0px;
-	padding:8px;
+	margin:10px;
+	padding:10px;
 	height:100%;
 }
 
@@ -16,7 +16,7 @@ html {
 
 body {
 	
-font-family: Avant Garde, sans-serif;
+font-family: Century Gothic, sans-serif;
   background: rgb(255, 250, 237);
   color: rgb(0, 0, 0);
   margin: 8px;
@@ -28,13 +28,14 @@ font-family: Avant Garde, sans-serif;
 	border: 1px solid rgb(77, 86, 102);
   	background: rgb(193, 208, 227);
   	width: 90%;      
-  	max-width: 1743px; 
+  	max-width: 1000px; 
   	margin: auto;
+    padding: 10px;
 }
 
 ul {
   list-style: none;
-  padding-left: 10px;
+  padding-left: 0px;
 }
 
 a {
@@ -47,7 +48,6 @@ a:hover {
 
 figure {
   margin: 0px;
-	padding: 10px;
 }
 
 figure img {
