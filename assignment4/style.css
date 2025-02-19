@@ -1,0 +1,105 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+
+body {
+
+    background-color: #c46a16;
+	
+	
+}
+
+
+#container {
+    
+    font-family:serif;
+    width: 1000px;
+    margin: auto;
+    border: 1px solid black;
+    padding: 10px;
+    position:relative;
+    background-color: #de7e23;
+   
+
+}
+
+header{
+    padding: 10px;
+}
+
+p.Rizal{
+    font-family: "Agu Display", serif;
+    /*position: relative;*/
+    width: 800px;
+    font-size: 4.0em;
+    /*transform: rotate(-40deg);*/
+    margin: auto;
+    letter-spacing: -1px;
+    word-spacing: 1px;
+    line-height: 1.4em;
+    text-align: center;
+    color:#a15005;
+     transform: rotate(10deg);
+    
+}
+
+span.know{
+    color:#a15005;
+}
+
+span.history{
+    color:#a15005;
+    /*padding-top:50px;
+    left: 10px;
+    /*transform: rotate(-45deg);*/
+}
+
+span.self{
+    color: #301801;
+    font-size: -1.4em;
+    font-family: "Anton SC", serif;
+    font-weight: 400;
+    position:relative;
+    bottom: -65px;
+    right: 100px;
+    letter-spacing: 2px;
+}
+
+
+
+span.jose{
+    font-family: "Anton SC", serif;
+    color: #4a2400;
+    /*transform: rotate(30deg);
+    position: absolute;*/
+    
+}
+
+span.no{
+    color: #faaf69;
+    letter-spacing: 4px;
+    font-size: 1.5em
+    
+    
+}
+    
+
+
+footer {
+    padding: 10px;
+}
+
+
+
