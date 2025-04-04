@@ -1,0 +1,171 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+    font-family: sans-serif;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+    scroll-behavior: smooth;
+}
+
+
+/* Mobile First CSS: we'll design for phone sizes first, then add media queries for larger screens later */
+
+
+body {
+	background:#b34970 url('../img/background.jpeg') no-repeat fixed center;
+	    background-size: cover;
+            padding: 0;
+}
+
+
+#container {
+	width:80%;
+	margin:auto;
+	background:rgba(184, 101, 7,.5);
+    padding: 50px;
+}
+
+header, footer {
+	color:#ffff;
+}
+
+header {
+	padding:0em;
+	text-align:left;
+}
+
+footer {
+	padding: 0em;
+}
+
+
+
+nav ul {
+	list-style:none;
+	padding-left:0px;
+    display:flex;
+	flex-wrap: wrap;
+}
+
+nav li {
+	flex: 1 0 20%;
+}
+
+nav a {
+	display:block;
+	text-decoration:none;
+	padding:1em;
+    background: #000;
+	text-align:center;
+    border-radius: 20px;
+    margin: 5px;
+    color: rgb(247, 140, 25);
+}
+
+nav a:hover{
+    color:blue;
+}
+
+
+
+figure {
+    background:rgba(122, 235, 178, 0.2);
+	margin:0px;
+	padding:1em;
+	
+}
+
+figure img{
+	width: 100%;
+}
+
+figcaption:hover{
+    color:#fff;
+}
+
+
+figure.responsive {
+    position: relative;
+    padding-bottom: 76.2%;  /* 16:9 */
+    height: 0px;
+    overflow: hidden;
+    max-width: 100%;
+    /*flex-grow: 1;
+    flex-basis: 800px;*/
+}
+
+figure.responsive iframe {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+section {
+	background:rgba(122, 235, 178, 0.5);
+	padding:1em;
+}
+
+section.video{
+    background:rgba(18, 224, 214,0.5);
+    padding:1em;
+    
+}
+
+
+/* ========================================
+MEDIA QUERIES!
+You can adjust the min-width numbers below, and add as many new media queries as you need.
+======================================== */
+
+
+
+/* Minimum width for laptops. */
+@media all and (min-width: 769px) {
+	
+/* flex parent */
+main {
+	display: flex;
+}
+
+/*flex items*/
+figure, section, iframe {
+	flex: 1 1 50%;
+}
+
+
+	
+} /* closes 769px+ */
+
+
+
+
+/* Minimum width for desktop screens. */
+@media all and (min-width: 1024px) {
+    
+    main{
+        display:flex;
+    }
+	
+figure {
+	flex-basis: 30%;
+}
+
+	
+/*nav li {
+	flex: 1 1 auto;
+}*/
+	
+} /* closes 1024px+ */
+
+
+
+
+
