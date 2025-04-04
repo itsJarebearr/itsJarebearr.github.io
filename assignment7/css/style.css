@@ -18,7 +18,7 @@ html {
 
 
 body {
-	background:#b34970 url('..img/background.jpeg') no-repeat fixed center;
+	background:#b34970 url('../img/background.jpeg') no-repeat fixed center;
 	    background-size: cover;
             padding: 0;
 }
