@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<meta charset="utf-8">
+	
+	<title>Paranormal Cat</title>
+	
+	<link rel="stylesheet" href="css/style.css">	
+	
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+    
+</head>
+
+
+<body>
+
+  <div id="container">
+
+<header>
+<h1>Possessed Cat</h1>
+</header>
+
+<main>
+    
+    <p>One day I was minding my own business until Pabu hopped on the chair across from me, she turns to me and her eyes started to glow. Then she made noises like this video. <cite>-Iza Morco</cite></p>
+ 
+
+        <div class="buttons"> 
+            <button id="revealImage1">Before</button>
+            <button id="revealImage2">After</button>
+            <button id="revealVideo">Video</button>
+        </div>
+
+
+        <div class="responsiveContainer">    
+        <figure id="image1">
+                <img src="img/before.jpg" alt="Before Posession"/>
+            </figure>
+
+        <figure id="image2">
+
+                <img src="img/after.jpg" alt="After Posession"/>
+
+            </figure>
+            
+        </div>
+    
+            <figure id="hiddenVideo" class="responsive">
+            
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/MsZwRO9JZA8?si=af6MJsNf9UEj7xY8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            
+            </figure>
+
+    
+    
+    
+
+</main>
+
+
+
+</div><!-- close "container" -->
+  
+  
+  <!-- Paste the jQuery starter code below here -->
+    
+  <!-- Link to jQuery on Google CDN-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  
+
+<script>
+  $(document).ready(function() {
+      
+      
+   $('#image1').hide();
+    $('#image2').hide();
+    $('#hiddenVideo').hide();  
+      
+    $('button#revealImage1').click(function(){
+      
+        //$('p#minnie').show();
+        //$('p#minnie').slideDown(200);
+        $('#image1').slideToggle(500);
+        
+    });//close click function
+      
+    $('button#revealImage2').click(function(){
+        
+        //$('p#lola').fadeIn(1000);
+        $('#image2').slideToggle(500);
+        
+    })//close other click func
+      
+    $('button#revealVideo').click(function () {
+    const video = $('#hiddenVideo');
+
+    video.slideToggle(100, function () {
+        // Scroll only after the video is fully shown
+        if (video.is(':visible')) {
+            $('html, body').animate({
+                scrollTop: video.offset().top - 50 // adjust offset if needed
+            }, 600);
+        }
+    });
+});//close click func3  
+    
+
+
+  }); //close .ready()
+</script>
+  
+  
+  
+
+</body>
+	
+</html> 
