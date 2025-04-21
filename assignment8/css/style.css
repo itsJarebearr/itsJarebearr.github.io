@@ -1,0 +1,173 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+.creepster-regular {
+  font-family: "Creepster", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+body {
+     background: linear-gradient(to bottom right, #2e1f47, #000000);  /* Dark, moody gradient */
+    color: #eaeaea;  /* Light grey text for contrast */
+    font-family: 'Creepster', cursive; /* Add a spooky font */
+    background-attachment: fixed;
+
+
+}
+
+
+#container {
+    background: rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+    color: #ffff;
+    padding: 3rem;
+}
+
+header h1{
+    text-align: center;
+    font-family: "Creepster", sans-serif, system-ui;
+    font-size: 4.5rem;
+}
+
+p{
+    font-family: cursive;
+    padding: 1rem;
+}
+
+.responsiveContainer {
+  display: flex;
+  justify-content: center;   /* or 'space-between', 'flex-start', etc. */
+  align-items: center;       /* aligns vertically if images have different heights */
+  gap: 20px;                 /* adds spacing between the images */
+}
+
+.responsiveContainer figure {
+  margin: 0;                 /* optional: remove default spacing */
+}
+
+img {
+  width: 300px;      
+  height: auto;      
+  display: block;
+}
+
+.buttons{
+    display:flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+}
+
+button{
+    padding:0.5rem 1.0rem;
+    border: none;
+    border-radius: 20px;
+    background-color: #bc91ed;
+    cursor:pointer;
+    transition: background 400ms;
+    flex-grow: 0;
+    width: auto;
+    font-family: "Creepster", sans-serif, system-ui;
+    font-size: 1rem;
+}
+
+button:hover{
+    background: #f2d96b;
+    color: #fff
+}
+
+#hiddenVideo{
+    margin: 2rem auto;
+    max-width:620px;
+    margin-top: 3rem;
+    margin-bottom: 4rem
+}
+
+figure.responsive {
+    position: relative;
+    padding-bottom: 56.25%;  /* 16:9 */
+    height: 0px;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+figure.responsive iframe {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+/*Desktop styles*/
+@media screen and (min-width:768px){
+    .buttons{
+        flex-direction:row;
+        justify-content:center;
+    }    
+}
+
+/* Mobile styles */
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 0.9em;  /* Slightly smaller text for mobile screens */
+    }
+    
+    .responsiveContainer {
+        flex-direction: column;  /* Stack images vertically */
+        align-items: center;     /* Center images */
+    }
+
+    #container {
+        padding: 3rem;  /* Add some padding to avoid content sticking to the edges */
+    }
+
+    #hiddenVideo {
+        max-width: 100%;
+        margin: 1rem 0;
+    }
+
+    h1 {
+        font-size: 1.5rem;  /* Smaller title for mobile */
+    }
+}
+
+/* Tablet styles (min-width 768px, max-width 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        font-size: 1.1em;
+    }
+    
+    .responsiveContainer {
+        flex-direction: row;  /* Images side by side */
+        gap: 15px;
+    }
+
+    .buttons {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+}
+
+
+
