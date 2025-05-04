@@ -1,0 +1,118 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+/* Mobile First CSS: we'll design for phone sizes first, then add media queries for larger screens later */
+
+body {
+	
+}
+
+
+#container {
+	
+}
+
+
+
+
+
+#about-section{   /*first section*/
+  background: #375534;
+  text-align:center;
+  padding: 2em;
+}
+
+#team-section{ /*second section*/
+  background:#6B9071;
+  text-align:center;
+  padding: 2em;
+  margin: auto;
+}
+
+.team-card{
+	background:#375534;
+	border-radius: 10px;
+	margin: 20px auto;
+	max-width:300px;
+}
+
+.card-details{
+	padding:1em;
+	margin:auto;
+}
+
+
+/* ========================================
+MEDIA QUERIES!
+You can adjust the min-width numbers below, and add as many new media queries as you need.
+======================================== */
+
+
+
+/* Minimum width for laptops. */
+@media all and (min-width: 769px) {
+
+	
+} /* closes 769px+ */
+
+
+
+
+/* Minimum width for desktop screens. */
+@media all and (min-width: 1024px) {
+	
+	#about-section{
+		text-align:left;
+		max-width: 1500px;
+		align-content: center;
+		margin: 20px auto; /* Add space between sections */
+	}
+	
+	#team-section{
+		max-width:1500px;
+		margin: 20px auto; /* Add space between sections */
+	}
+	
+	#team-section h1{
+		text-align: left;
+	}
+	
+	.teamrow {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 20px;
+		padding: ;
+  }
+
+  .team-card {
+		flex: 1 1 250px;
+		max-width: 300px;
+	  	display:flex;
+	  
+	
+  }
+	
+	
+
+	
+	
+	
+	
+	
+} /* closes 1024px+ */
+
+
+
