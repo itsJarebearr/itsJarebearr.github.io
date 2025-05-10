@@ -22,6 +22,8 @@ body {
 
 
 #container {
+	height: 100vh;
+	justify-content: center;
 	
 }
 
@@ -29,15 +31,19 @@ body {
 #supportbanner{
 	background: #375534;
 	padding:20px;
-	text-align:center;
 }
 
 #products{
-	text-align: center;
+	text-align:left;
 	padding: 20px;
 	background: #E2F5CF;
 }
 
+	ul {
+		text-align:left;
+		list-style-type: none;
+		text-decoration: none;
+	}
 
 
 
@@ -64,9 +70,6 @@ You can adjust the min-width numbers below, and add as many new media queries as
 /* Minimum width for desktop screens. */
 @media all and (min-width: 1024px) {
 	
-	ul a{
-		text-decoration: none;
-	}
 	
 	
 } /* closes 1024px+ */

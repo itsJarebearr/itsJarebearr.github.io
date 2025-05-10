@@ -11,18 +11,72 @@ html {
     line-height: 1.4em;
 }
 
+/*-----------------------fonts----------------------*/
+.passion-one-regular {
+  font-family: "Passion One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
+.passion-one-bold {
+  font-family: "Passion One", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.passion-one-black {
+  font-family: "Passion One", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+
+.noto-sans-<uniquifier> {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
 
 /* Mobile First CSS: we'll design for phone sizes first, then add media queries for larger screens later */
 
 body {
-    margin: 0;
-	background-color: #E3EED4; 
+  margin: 0;
+  background-color: #E3EED4;
+  font-family: "Noto Sans", sans-serif;
 }
 #container {
   
 
 }
+
+/*---------Text Styling----------*/
+h1, h2{
+  font-family:"Passion One", sans-serif;
+  letter-spacing: 3px;
+  text-decoration:none;
+}
+
+.headerL{
+  color:#AAEECC;
+}
+
+.textL{
+  color: #E3EED4;
+}
+
+.cardtxt{
+  color: #E2F5CF;
+}
+
+.article-title{
+  
+}
+
+
 
 /*--------------------------Nav bar styling------------------------- */
 nav {
@@ -32,22 +86,27 @@ nav {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  text-decoration: none;
 }
 
 .logo-title {
   display: flex;
   align-items: center;
+  text-decoration:none;
 }
 
 .logo {
-  height: 40px;
+  height: 100px;
   margin-right: 10px;
+  text-decoration:none;
+  
 }
 
-nav h1 {
-  color: white;
-  font-size: 1.5rem;
+.logo-title h1 {
+  text-decoration: none;
+  color: white; /* ensure color is what you want */
 }
+
 
 .menu-toggle {
   font-size: 2rem;
@@ -76,9 +135,13 @@ nav h1 {
 }
 
 #nav-links li a {
-  color: white;
+  color: #fff;
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size:1.1rem;
+}
+
+#nav-links li a:hover{
+  color: #AAEECC;
 }
 
 
@@ -87,6 +150,7 @@ nav h1 {
   background: #375534;
   text-align:center;
   padding: 1.2em;
+  color: #E2F5CF;
 }
 
 
@@ -100,11 +164,12 @@ nav h1 {
   background: #375534;
   text-align:center;
   padding:1.5em;
+  color: #E2F5CF;
 }
 
 /*--------------------------footer bar styling------------------------- */
 footer {
-  position:relative;
+  position:static;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -119,6 +184,22 @@ footer {
 .member{
   max-height:150px;
   max-width:150px;
+}
+
+.full-title {
+  display: none;
+}
+
+.short-title {
+  display: inline;
+}
+
+.articleimg{
+  cursor:pointer;
+}
+
+.banner{
+  cursor:pointer;
 }
 
 /* ========================================
@@ -146,10 +227,22 @@ You can adjust the min-width numbers below, and add as many new media queries as
   #nav-links li {
     padding: 0 15px;
   }
+  
+  #nav-links li a {
+    font-size: 26px;
+  }
 
   section {
     text-align: left;
     padding: 40px;
+  }
+  
+    #welcome-section, #mission-section, #memorial-section {
+    padding: 20px;
+    margin: 20px auto; /* Add space between sections */
+    width: 800px;
+    text-align: left;
+    align-content: center;
   }
 
   .homeimg{
@@ -164,6 +257,14 @@ You can adjust the min-width numbers below, and add as many new media queries as
 
 /* Minimum width for desktop screens. */
 @media all and (min-width: 1024px) {
+  
+    .full-title {
+    display: inline;
+  }
+
+  .short-title {
+    display: none;
+  }
   
   .logo-title {
     top:62px;
@@ -181,9 +282,12 @@ You can adjust the min-width numbers below, and add as many new media queries as
     text-align: center;
 }
   
+    #nav-links li a {
+    font-size: 26px;
+  }
+  
   
   #welcome-section, #mission-section, #memorial-section {
-    background-color: #fff;  /* White background for the boxes */
     padding: 20px;
     margin: 20px auto; /* Add space between sections */
     width: 1300px;

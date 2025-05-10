@@ -32,15 +32,50 @@ body {
 }
 
 
-#research2{   /*first section*/
+#research-section2{   /*2nd section*/
   background: #6B9071;
   text-align:center;
   padding: 15px;
 }
 
+
+#more-research{
+  background: #6B9071;
+  text-align:center;
+  padding: 15px;
+  margin: 20px auto; /* Add space between sections */
+}
+
+.article{
+	margin: 20px auto; /* Add space between sections */
+}
+
+.article a{
+	text-decoration:none;
+	color:inherit;
+	display:block;
+}
+
+.article-title{
+	font-size: 1rem;
+	color:000;
+}
+
+.article-title:hover{
+	color:#AAEECC
+}
+
 .banner{
 	width:100%;
 	max-width:800px;
+    display:flex;
+    justify-content: center;
+	align-items: center;
+}
+
+.footer-articles{
+	left: 0;
+	bottom:0;
 }
 
 
@@ -54,15 +89,39 @@ You can adjust the min-width numbers below, and add as many new media queries as
 /* Minimum width for laptops. */
 @media all and (min-width: 769px) {
 	
-	#research-section1, #research2 {
-		background-color: #375534; 
-		padding: 20px 200px;
-		margin: 20px auto; /* Add space between sections */
-		width: 1300px;
-		text-align: left;
-		align-content: center;
-		max-width:1001px;
+    
+    #research-section1{
+        width:800px;
+        padding: 20px 20px;
+        margin: 20px auto; /* Add space between sections */
+        text-align: left;
+    }
+     
+    .research-intro{
+        text-align: left;
+        align-content: center;
+    }
+    
+    
+    .banner{
+        width:100%;
+        max-width:1000px;
+    }
+    
+    #research-section2{
+        width:800px;
+        padding:20px 20px;
+        margin: 20px auto; /* Add space between sections */
+        text-align: left;
+		justify-content:space-evenly;
+		gap:20px;
+    }
+    
+	 .more-research{
+		padding: 20px;
+		margin: 30px auto; /* Add space between sections */
 		display:flex;
+        text-align: center;
   }
 
 	
@@ -74,7 +133,29 @@ You can adjust the min-width numbers below, and add as many new media queries as
 /* Minimum width for desktop screens. */
 @media all and (min-width: 1024px) {
 	
+	#research-section1{
+		width: 1300px;
+	}
 	
+	#research-section2{
+		width: 1300px;
+		justify-content:space-evenly;
+		gap:20px;
+	}
+	
+	.banner{
+		width:100%;
+		max-width:1500px;
+		display:flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.article-title{
+		font-size:16px;
+		font-weight: bold;
+		
+	}
 	
 	
 } /* closes 1024px+ */
