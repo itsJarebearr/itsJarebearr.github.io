@@ -11,18 +11,24 @@
 	<title>PCRC | Join</title>
 	
 	<link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" href="css/join.css">	
+		<link rel="stylesheet" href="css/join.css">
+  
+  <!--------fonts--------->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Passion+One:wght@400;700;900&display=swap" rel="stylesheet">
 	
 </head>
 
 
 <body>
 	
-  <header>
     <nav>
       <div class="logo-title">
-        <img src="img/logo.png" alt="PCRC logo" class="logo">
-        <h1>PCRC</h1>
+		<a href="PCRC.html">
+        <img src="img/logo2.png" alt="PCRC logo" class="logo">
+		  </a>
+        <h1><span class="short-title">PCRC</span> <span class="full-title">Paranormal Canine Research Collective</span></h1>
       </div>
       <button class="menu-toggle" id="menu-toggle">&#9776;</button>
       <ul id="nav-links" class="nav-collapsed">
@@ -32,20 +38,62 @@
         <li><a href="support.html">Support Us</a></li>
       </ul>
     </nav>
-  </header>
 
-  <div id="container"> <!-----Join us form-------->
-	  
-	  <h1>JOIN US</h1>
-	  
-	 <p>Do you believe your dog may be reacting to something unseen?Have you noticed your pet displaying strange behavior in response to locations or situations that others don’t seem to notice? The Paranormal Canine Research Collective welcomes you to share your story. We invite you to become a part of our research efforts and contribute to a growing body of evidence that explores the mysteries of canine interaction with the paranormal.</p>
-
-	<p>We invite pet owners, paranormal enthusiasts, and researchers to become part of the PCRC. As a member, you can contribute your own observations, share your dog’s experiences, and gain access to our library of research, case studies, and expert analysis. Members also receive updates on ongoing investigations and are encouraged to participate in our field research missions.</p>
-
-
-  </div><!-- close "container" -->
+<div id="container"> <!-----Join us page-------->
   
-	<footer>&copy; 2025 PCRC. All rights reserved.</footer>
+  
+	<header> <h1 class=hb>JOIN US</h1> </header> 
+	  
+	 <p class=textL>Do you believe your dog may be reacting to something unseen? Have you noticed your pet displaying strange behavior in response to locations or situations that others don’t seem to notice? The Paranormal Canine Research Collective welcomes you to share your story. We invite you to become a part of our research efforts and contribute to a growing body of evidence that explores the mysteries of canine interaction with the paranormal.</p>
+
+	<p class=textL>We invite pet owners, paranormal enthusiasts, and researchers to become part of the PCRC. As a member, you can contribute your own observations, share your dog’s experiences, and gain access to our library of research, case studies, and expert analysis. Members also receive updates on ongoing investigations and are encouraged to participate in our field research missions.</p>
+  
+  
+<section><!--------Join us form------->
+  <form> 
+    <div class=form-group> 
+
+      <p>Name:</p>
+        <input class="name-input" type="text" placeholder="First name, Last name">
+
+
+     <p>How would you like to contribute?</p>
+        <select class="options">
+         <option>Select One</option>
+         <option>As a pet owner</option>
+         <option>As a Paranormal Enthusiast</option>
+          <option>As a Researcher</option>
+          <option>Other</option>      
+        </select>
+
+            <div class=textbox>
+            <p>Please enter any inquiries here:</p>
+              <textarea id="addinfo" rows="5"></textarea>
+            </div>
+
+              <p>E-mail:</p>
+                <input class="email-input" type="text" placeholder="Enter E-mail">
+
+              <div class=btn>
+               <button type="button" onclick="redirect()">Submit</button>
+              </div>
+
+    </div>
+
+        <script>
+          function redirect() {
+          location.href = "thankyou.html";
+            }
+        </script>
+
+    </form>
+  </section><!--------Join us form------->
+  
+
+
+      </div><!-- close "container" -->
+
+        <footer>&copy; 2025 PCRC. All rights reserved.</footer>
 	
 <script>
     document.getElementById('menu-toggle').addEventListener('click', function () {
