@@ -286,11 +286,12 @@ You can adjust the min-width numbers below, and add as many new media queries as
   }
   
     #welcome-section, #mission-section, #memorial-section {
-    max-width: 800px;
-    padding: 20px;
-    margin: 20px auto; /* Add space between sections */
-    text-align: left;
-    align-content: center;
+        width:800px;
+        padding:20px 20px;
+        margin: 20px auto; /* Add space between sections */
+        text-align: left;
+	justify-content:space-evenly;
+	gap:20px;
   }
 
   .homeimg{
