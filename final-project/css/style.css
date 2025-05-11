@@ -176,12 +176,13 @@ button:hover {
 }
 
 
-
+/*========front page=======*/
 #welcome-section{   /*first section*/
   background: #375534;
   text-align:center;
   padding: 1.2em;
   color: #E2F5CF;
+  margin: auto;
 }
 
 
@@ -247,6 +248,7 @@ footer {
   display: block;
   max-width: 100%;
 }
+
 
 /* ========================================
 MEDIA QUERIES!
@@ -339,7 +341,7 @@ You can adjust the min-width numbers below, and add as many new media queries as
   #welcome-section, #mission-section, #memorial-section {
     padding: 20px;
     margin: 20px auto; /* Add space between sections */
-    width: 1000px;
+    width: 1500px;
     text-align: left;
     align-content: center;
   }
