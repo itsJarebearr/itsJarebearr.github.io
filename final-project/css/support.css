@@ -22,8 +22,6 @@ body {
 
 
 #container {
-	height: 100vh;
-	justify-content: center;
 	
 }
 
@@ -31,6 +29,7 @@ body {
 #supportbanner{
 	background: #375534;
 	padding:20px;
+	text-align:center;
 }
 
 #products{
@@ -59,6 +58,20 @@ You can adjust the min-width numbers below, and add as many new media queries as
 /* Minimum width for laptops. */
 @media all and (min-width: 769px) {
 	
+	#products{
+		width:800px;
+		text-align:center;
+		background:#6B9071;
+		margin: auto;
+		padding:20px;
+		height:70vh;
+	}
+	
+	ul{
+		text-align:center;
+		text-decoration:none;
+	}
+	
 	
 	
 	
@@ -69,6 +82,10 @@ You can adjust the min-width numbers below, and add as many new media queries as
 
 /* Minimum width for desktop screens. */
 @media all and (min-width: 1024px) {
+	
+	#prodcuts{
+		width:1400px;
+	}
 	
 	
 	

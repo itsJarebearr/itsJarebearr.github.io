@@ -36,18 +36,18 @@ body {
   background: #6B9071;
   text-align:center;
   padding: 15px;
+  margin:auto;
 }
 
-
-#more-research{
-  background: #6B9071;
-  text-align:center;
-  padding: 15px;
-  margin: 20px auto; /* Add space between sections */
-}
 
 .article{
-	margin: 20px auto; /* Add space between sections */
+	margin: 0px auto; /* Add space between sections */
+	max-width:300px;
+}
+
+.article-details{
+	padding:1em;
+	
 }
 
 .article a{
@@ -56,18 +56,23 @@ body {
 	display:block;
 }
 
-.article-title{
-	font-size: 1rem;
+.article-title, .article-title2{
+	font-size: 24px;
 	color:000;
+	font-family:"Passion One", sans-serif;
 }
 
 .article-title:hover{
-	color:#AAEECC
+	color:#AAEECC;
+}
+
+.article-title2:hover{
+	color:#AAEECC;
 }
 
 .banner{
 	width:100%;
-	max-width:800px;
+	max-width:900px;
     display:flex;
     justify-content: center;
 	align-items: center;
@@ -76,6 +81,11 @@ body {
 .footer-articles{
 	left: 0;
 	bottom:0;
+}
+
+.featured-article a{
+	text-decoration:none;
+	text-align: center;
 }
 
 
@@ -123,7 +133,27 @@ You can adjust the min-width numbers below, and add as many new media queries as
 		display:flex;
         text-align: center;
   }
+	.article {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		
+  }
 
+  .article-details{
+		flex: 1 1 250px;
+		max-width: 200px;
+	  	display:flex;
+  }
+	
+	.article-title2{
+		font-size:24px;
+		text-align:center;
+		width:200px;
+		margin: auto;
+		font-weight:bold;
+		font-family: "Passion One", sans-serif;
+	}
 	
 } /* closes 769px+ */
 
@@ -139,7 +169,7 @@ You can adjust the min-width numbers below, and add as many new media queries as
 	
 	#research-section2{
 		width: 1300px;
-		justify-content:space-evenly;
+		justify-content:space-between;
 		gap:20px;
 	}
 	
@@ -152,9 +182,15 @@ You can adjust the min-width numbers below, and add as many new media queries as
 	}
 	
 	.article-title{
-		font-size:16px;
+		font-size:26px;
 		font-weight: bold;
+		justify-content:space-between;
 		
+	}
+	
+	.article{
+		width:400px;
+		flex:wrap;
 	}
 	
 	

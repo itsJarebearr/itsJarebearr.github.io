@@ -1,96 +1,62 @@
 /* Basic CSS resets -- leveling slight inconsistencies in browsers */
-html, body {
-	margin:0px;
-	padding:0px;
-	height:100%;
+html,
+body {
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
 }
 
 html {
-		/* Standard text-settings below */
+	/* Standard text-settings below */
 	font-size: 1em;
-    line-height: 1.4em;
+	line-height: 1.4em;
 }
-
-
 
 /* Mobile First CSS: we'll design for phone sizes first, then add media queries for larger screens later */
 
 body {
-	
-	
 }
-
 
 #container {
-	text-align:center;
-	background:#375534;
-	padding: 1em;
-	max-width:800px;
+	text-align: center;
+	background: #375534;
+	padding: 2em;
+	max-width: 800px;
 }
 
-.hb{
+.hb {
 	font-size: 46px;
-	color: #AAEECC;
+	color: #aaeecc;
 }
 
 form {
 	text-align: left;
-	padding:10px;
-	background: #6B9071;
-	outline: solid #0F2A1D;
+	padding: 10px;
+	background: #6b9071;
+	outline: solid #0f2a1d;
 	border-radius: 1em;
 }
 
-.form-group{
-	padding:1em;
+.form-group {
+	padding: 1em;
 }
 
-.name-input, .options, .email-input, textarea {
-	background: #E2F5CF;
+.name-input,.options,.email-input,textarea {
+	background: #e2f5cf;
 	width: 100%;
 	max-width: 800px;
-	border-radius:.2em;
-	padding:.25em; 
+	border-radius: 0.2em;
+	padding: 0.25em;
 }
 
-
-.textbox{
+.textbox {
 	padding: 1em 0 0 0;
 	text-align: left;
 }
 
-.selections{
-	color:#000;
+.selections {
+	color: #000;
 }
-
-.btn{
-	padding: 1em 0;
-	outline: none;
-}
-
-button{
-  background-color: #0F2A1D;
-  color: #E2F5CF;
-  padding: 10px 20px;
-  border-radius: 1em;
-  cursor:pointer;
-  border:none;
-}
-
-button:hover{
-	background-color: #AAEECC;
-	color:#0F2A1D;
-	transform: scale(1.10);
-}
-
-
-
-
-
-
-
-
-
 
 
 /* ========================================
@@ -98,39 +64,25 @@ MEDIA QUERIES!
 You can adjust the min-width numbers below, and add as many new media queries as you need.
 ======================================== */
 
-
-
 /* Minimum width for laptops. */
 @media all and (min-width: 769px) {
-	
-	#container{
+	#container {
 		align-items: center;
-		margin:auto;
+		margin: auto;
 		max-width:1000px;
-		height:100vh;
-		max-height:100%
+
 	}
-	
-	.hb{
-	font-size: 80px;
-}
-	
-	
+
+	.hb {
+		font-size: 80px;
+	}
 } /* closes 769px+ */
-
-
-
 
 /* Minimum width for desktop screens. */
 @media all and (min-width: 1028px) {
 	
-	.hb{
-	font-size: 100px;
-}
 	
-	
-	
+	.hb {
+		font-size: 100px;
+	}
 } /* closes 1024px+ */
-
-
-
