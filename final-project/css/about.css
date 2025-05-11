@@ -94,14 +94,14 @@ You can adjust the min-width numbers below, and add as many new media queries as
 	#about-section{
 		text-align:left;
 		max-width:100%;
-		width:1400px;
+		width:1500px;
 		align-content: center;
 		margin: 20px auto; /* Add space between sections */
 	}
 	
 	#team-section{
 		max-width:100%;
-		width:1400px;
+		width:1500px;
 		margin: 20px auto; /* Add space between sections */
 	}
 	
@@ -118,7 +118,6 @@ You can adjust the min-width numbers below, and add as many new media queries as
 
   .team-card {
 		flex: 1 1 250px;
-		max-width: 300px;
 	  	display:flex;
   }
 	
