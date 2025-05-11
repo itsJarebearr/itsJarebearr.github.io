@@ -94,14 +94,14 @@ You can adjust the min-width numbers below, and add as many new media queries as
 	#about-section{
 		text-align:left;
 		max-width:100%;
-		width:1500px;
+		width:1300px;
 		align-content: center;
 		margin: 20px auto; /* Add space between sections */
 	}
 	
 	#team-section{
 		max-width:100%;
-		width:1500px;
+		width:1300px;
 		margin: 20px auto; /* Add space between sections */
 	}
 	
