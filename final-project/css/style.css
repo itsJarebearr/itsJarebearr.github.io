@@ -286,7 +286,8 @@ You can adjust the min-width numbers below, and add as many new media queries as
   }
   
     #welcome-section, #mission-section, #memorial-section {
-        width:800px;
+        max-width: 900px;
+  	margin: 20px auto;
         padding:20px 20px;
         margin: 20px auto; /* Add space between sections */
         text-align: left;
@@ -338,13 +339,14 @@ You can adjust the min-width numbers below, and add as many new media queries as
   }
   
   
-  #welcome-section, #mission-section, #memorial-section {
-    padding: 20px;
-    margin: 20px auto; /* Add space between sections */
-    width: 1300px;
-    text-align: left;
-    align-content: center;
-  }
+#welcome-section, #mission-section, #memorial-section {
+  max-width: 1300px;
+  padding: 20px;
+  margin: 20px auto;
+  text-align: left;
+  align-content: center;
+}
+
 
 
 
